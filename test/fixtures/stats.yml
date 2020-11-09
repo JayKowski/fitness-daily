@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  stat_name: MyString
+  measurement: 1
+
+two:
+  stat_name: MyString
+  measurement: 1
