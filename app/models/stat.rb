@@ -1,3 +1,3 @@
 class Stat < ApplicationRecord
-    has_andBelongs_to_many :users
+    has_and_belongs_to_many :users
 end
