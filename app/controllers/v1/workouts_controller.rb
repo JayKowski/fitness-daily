@@ -1,6 +1,6 @@
 class V1::WorkoutsController < ApplicationController
     def index
-        @workouts = Workout.all
+        @workouts = Workout.all_workouts(current_user.id)
 
         render json: @workouts, status: :ok
     end
@@ -14,7 +14,6 @@ class V1::WorkoutsController < ApplicationController
             render json: @workout.errors, status: :unprocessable_entity
         end
     end
-
 
     private
 

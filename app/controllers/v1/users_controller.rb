@@ -31,7 +31,7 @@ class V1::UsersController < ApplicationController
     end
 
     def auto_login
-        render json: @user
+        render json: { :user => @user.id, :username => @user.username }
     end
 
 

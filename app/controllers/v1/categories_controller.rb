@@ -1,5 +1,4 @@
 class V1::CategoriesController < ApplicationController
-    
     def index
         @categories = Category.shortened_categs
 
@@ -19,7 +18,6 @@ class V1::CategoriesController < ApplicationController
     private
 
     def categs_params
-        params.require(:category).permit(:category_name, :user_id)
+        params.require(:category).permit(:category_name)
     end
-
 end
