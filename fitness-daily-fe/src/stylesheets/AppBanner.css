@@ -1,0 +1,11 @@
+.app-banner {
+    border-bottom: 1px solid #10232D;
+    background-color: #8A6AB4;
+}
+
+.app-banner .heading {
+    margin: 0;
+    padding: 10px 0px;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    color: #10232D;
+}
