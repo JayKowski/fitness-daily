@@ -1,0 +1,9 @@
+.new-workout-form {}
+
+.new-workout-form .workout-input {
+    padding: 2px;
+    width: 70%;
+    border: 1px solid #888;
+    border-radius: 3px;
+    margin-right: 5px;
+}

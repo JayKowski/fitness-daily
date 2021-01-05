@@ -1,7 +1,7 @@
 class Workout < ApplicationRecord
   belongs_to :category
   belongs_to :user
-  has_many :reps
+  has_many :reps, dependent: :destroy
 
   def self.all_workouts(id)
     workouts = []

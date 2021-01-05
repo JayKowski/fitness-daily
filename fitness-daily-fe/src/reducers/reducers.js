@@ -30,13 +30,30 @@ function userDataReducer(state = {}, action) {
 function categoriesReducer(state = [], action) {
     switch (action.type) {
         case 'CATEGORIES':
-        console.log(action.categories)
             return action.categories;
         default:
             return state;
     }
 }
 
-const rootReducer = combineReducers({ signInReducer, userDataReducer, signUpReducer, categoriesReducer });
+function newWorkoutReducer(state = {}, action) {
+    switch (action.type) {
+        case 'NEW_WORKOUT':
+            return action.workout;
+        default:
+            return state;
+    }
+}
+
+function workoutsReducer(state = {}, action) {
+    switch (action.type) {
+        case 'WORKOUTS_REDCUER':
+            return action.workouts;
+        default:
+            return state;
+    }
+}
+
+const rootReducer = combineReducers({ signInReducer, userDataReducer, signUpReducer, categoriesReducer, newWorkoutReducer, workoutsReducer });
 
 export default rootReducer;

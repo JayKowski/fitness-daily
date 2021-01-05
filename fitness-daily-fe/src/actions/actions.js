@@ -15,13 +15,27 @@ export function userSignup(user) {
 export function userData(user) {
     return {
         type: 'USER_DATA',
-        user
+        user,
     }
 }
 
 export function categories(categories) {
     return {
         type: 'CATEGORIES',
-        categories
+        categories,
+    }
+}
+
+export function newWorkout(workout) {
+    return {
+        type: 'NEW_WORKOUT',
+        workout,
+    }
+}
+
+export function workouts(workouts) {
+    return {
+        type: 'WORKOUTS_REDUCER',
+        workouts,
     }
 }

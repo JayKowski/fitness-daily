@@ -1,6 +1,8 @@
 class V1::CategoriesController < ApplicationController
+    # before_action :authorized
+
     def index
-        @categories = Category.shortened_categs
+        @categories = Category.shortened_categs(current_user.id)
 
         render json: @categories, status: :ok
     end

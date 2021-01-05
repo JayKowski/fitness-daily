@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_09_200226) do
+ActiveRecord::Schema.define(version: 2020_12_07_202809) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_11_09_200226) do
     t.string "rep_count", default: "0"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "workout_date"
     t.index ["workout_id"], name: "index_reps_on_workout_id"
   end
 
